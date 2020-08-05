@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="mysuite">
+    <test name="moudle">
+        <classes>
+            <class name="com.tester.extend.demo.TestMethodsDemo">
+                <methods>
+                    <incluede name="testOne"></incluede>
+                    <incluede name="testTwo"></incluede>
+                    <incluede name="testThree"></incluede>
+                    <incluede name="logDeno"></incluede>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>
+    </listeners>
+
+</suite>
