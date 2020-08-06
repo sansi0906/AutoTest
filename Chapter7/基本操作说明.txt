@@ -1,0 +1,30 @@
+//http是在server type提示时加的
+java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c startUpFrist.json
+
+//遇到了一个问题
+问题描述：
+写startupPost时明明使用了forms仍然报错 400
+{
+      "description": "这是一个带参数的错误post演示请求",
+      "request": {
+        "uri": "/postwithparam",
+        "method": "post",
+        "forms": {
+          "name": "sansi",
+          "sex": "man"
+        }
+      },
+      "response": {
+        "text": "这是一个报400错误的演示请求！"
+      }
+    }
+
+1.发现postman时需要使用：x-www-form-urlencoded 格式才能请求
+*参考：https://www.cnblogs.com/Teachertao/p/11042351.html
+2.jmeter 增加HTTP信息头管理器 Content-type: application/x-www-form-urlencoded
+*参考：https://www.cnblogs.com/blueteer/p/11089965.html
+
+1.postman如何添加cookies：
+login=true; Path=/; Domain=127.0.0.1; Expires=Fri, 06 Aug 2021 17:45:40 GMT;
+
+小小哦耶一下，学习遇到问题还是要自己解决！

@@ -1,0 +1,27 @@
+[
+  {
+    "description": "这是一个没有参数的post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是一个没有参数的post请求"
+    }
+  },
+    {
+      "description": "这是一个带参数的错误post演示请求",
+      "request": {
+        "uri": "/postwithparam",
+        "method": "post",
+        "forms": {
+          "name": "sansi",
+          "sex": "man"
+        }
+      },
+      "response": {
+        "text": "这是一个报400错误的演示请求！"
+      }
+    }
+
+]
