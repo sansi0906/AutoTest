@@ -27,4 +27,7 @@ java -jar ./moco-runner-0.11.0-standalone.jar http -p 8899 -c startUpFrist.json
 1.postman如何添加cookies：
 login=true; Path=/; Domain=127.0.0.1; Expires=Fri, 06 Aug 2021 17:45:40 GMT;
 
+
+
+****另外一定要注意，如果使用postman调试，注意body方式与Params传参数的选择，否则有很多惊喜，让你觉得自己成功了****
 小小哦耶一下，学习遇到问题还是要自己解决！
