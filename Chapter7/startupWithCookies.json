@@ -7,8 +7,7 @@
     },
     "response": {
       "cookies": {
-        "login": "true",
-        "status": "200"
+        "login": "true"
       },
       "text": "cookies get sucess!"
     }
@@ -42,7 +41,7 @@
     "response": {
       "status": 200,
       "json": {
-        "huhansan": "sucess",
+        "sansi": "sucess",
         "status": "1"
       }
     }
