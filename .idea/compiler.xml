@@ -15,7 +15,6 @@
     <bytecodeTargetLevel>
       <module name="Chapter10" target="1.8" />
       <module name="Chapter5" target="1.6" />
-      <module name="Chapter5 (1)" target="1.8" />
       <module name="Chapter6" target="1.6" />
       <module name="Chapter9" target="6" />
     </bytecodeTargetLevel>
