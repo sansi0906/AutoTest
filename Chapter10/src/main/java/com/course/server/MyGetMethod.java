@@ -16,7 +16,7 @@ import java.util.Objects;
 @Api(value = "/", description = "all get methods!")
 public class MyGetMethod {
     @RequestMapping(value = "/getCookies", method = RequestMethod.GET)
-    @ApiOperation(value = "通过这个方法可以获取到Cookies",httpMethod = "GET")
+    @ApiOperation(value = "通过这个方法可以获取到Cookies", httpMethod = "GET")
     public String getCookies(HttpServletResponse response) {
         Cookie cookie = new Cookie("login", "true");
         response.addCookie(cookie);
@@ -31,7 +31,7 @@ public class MyGetMethod {
      * 要求客户端携带客户端访问
      */
     @RequestMapping(value = "/get/with/cookies", method = RequestMethod.GET)
-    @ApiOperation(value = "通过这个方法可以获取到Cookies",httpMethod = "GET")
+    @ApiOperation(value = "通过这个方法可以获取到Cookies", httpMethod = "GET")
     public String getWithCookies(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
         if (Objects.isNull(cookies)) {
@@ -54,7 +54,7 @@ public class MyGetMethod {
      * 模拟获取商品列表
      */
     @RequestMapping(value = "get/with/param", method = RequestMethod.GET)
-    @ApiOperation(value = "通过这个方法可以获取到Cookies",httpMethod = "GET")
+    @ApiOperation(value = "通过这个方法可以获取到Cookies", httpMethod = "GET")
     public Map<String, Integer> getList(@RequestParam Integer start,
                                         @RequestParam Integer end) {
         Map<String, Integer> myGoodList = new HashMap<>();
@@ -70,7 +70,7 @@ public class MyGetMethod {
      * 方式：url：IP：port/get/with/papram/10/20
      */
     @RequestMapping(value = "get/with/param/{start}/{end}", method = RequestMethod.GET)
-    @ApiOperation(value = "通过这个方法可以获取到Cookies",httpMethod = "GET")
+    @ApiOperation(value = "通过这个方法可以获取到Cookies", httpMethod = "GET")
     public Map myGetList(@PathVariable Integer start,
                          @PathVariable Integer end) {
         Map<String, Integer> yourLsit = new HashMap<>();
