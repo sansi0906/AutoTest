@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="thread" parallel="classes" thread-count="3">
+    <!--
+    parallel 3种级别：tests、methods、classes
+
+    tests级别：不同的tests标签下的用例可以在不同的线程中执行
+                相同的tests标签下的用例只能在同一个线程中执行
+
+    methods 级别：所有用例都可以在不同的线程下 去执行；
+
+    classes级别：相同的class 标签下的用例在同一个线程中执行
+                不同的class标签下的用例可以在不同的线程中执行
+
+    thread-count：代表了最大线并发程数；
+    xml 文件这种配置方式不支持指定线程池，只有方法上才支持指定线程池-->
+    <test name="demo1">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"></class>
+            <class name="com.course.testng.BasicAnnotation"></class>
+
+        </classes>
+    </test>
+    <test name="demo2">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"></class>
+            <class name="com.course.testng.BasicAnnotation"></class>
+
+        </classes>
+    </test>
+    <test name="demo3">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"></class>
+            <class name="com.course.testng.BasicAnnotation"></class>
+        </classes>
+    </test>
+</suite>

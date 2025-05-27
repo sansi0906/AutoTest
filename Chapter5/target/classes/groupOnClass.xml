@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="suiteName">
+    <test name="runAll">
+        <classes>
+            <class name="com.course.testng.groups.GroupOnClassO"></class>
+            <class name="com.course.testng.groups.GroupOnClassT"></class>
+            <class name="com.course.testng.groups.GroupOnClassTh"></class>
+        </classes>
+    </test>
+    <test name="runOnlyStu">
+        <groups>
+            <run>
+                <include name="stu"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.GroupOnClassO"></class>
+            <class name="com.course.testng.groups.GroupOnClassT"></class>
+            <class name="com.course.testng.groups.GroupOnClassTh"></class>
+        </classes>
+    </test>
+</suite>
